@@ -1,3 +1,93 @@
 .rightBar{
+
   flex: 3;
+  margin-left: 20px;
+  position: sticky;
+  top: 100px;
+  height: calc(100vh - 100px);
+  overflow: scroll;
+  padding: 0 10px;
+  font-size: 13px;
+
+  &::-webkit-scrollbar{
+    display: none;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+   
+    
+    .item{
+      padding: 20px;
+      background-color: rgb(255, 255, 255);
+      border: 3px solid  rgb(237, 245, 247);
+      -webkit-box-shadow: 17px 10px 36px -14px rgba(0,0,0,0.75);
+      -moz-box-shadow: 17px 10px 36px -14px rgba(0,0,0,0.75);
+      box-shadow: 17px 10px 36px -14px rgba(0,0,0,0.75);
+      span{}
+
+      .user{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .userInfo{
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 10px 0;
+          position: relative;
+
+          img{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          .online{
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            top: 5px;
+            left: 12px;
+            background-color: #51f300;
+            position: absolute;
+          }
+
+          p{
+            color: gray;
+          }
+
+          span{}
+        }
+
+        .buttons{
+          display: flex;
+          align-items: center;
+          gap: 5px;
+
+          button{
+            font-weight: normal;
+            color: #fff;
+            background-color: rgb(76, 92, 234);
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+          }
+
+          .follow{
+            color: #fff;
+            background-color: rgb(76, 92, 234);
+          }
+
+          .dismiss{
+            color: #fff;
+            background-color: rgb(204, 39, 21);
+          }
+        }
+      }
+    }
+  }
 }

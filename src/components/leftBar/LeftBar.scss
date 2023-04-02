@@ -1,9 +1,19 @@
+@import '../../style.scss';
+
 .leftBar{
+  @include themify($themes){
+
   flex: 1;
-  margin-left: 20px;
   position: sticky;
-  top: 100px;
-  height: calc(100vh - 100px);
+  top: 70px;
+  height: calc(100vh - 70px);
+  overflow: scroll;
+  background-color: themed('bg');
+  color: themed('textColor');
+
+  &::-webkit-scrollbar{
+    display: none;
+  }
   
   .container{
 
@@ -13,6 +23,7 @@
       height: 0.5px;
       background-color: rgb(199, 177, 224);
       width: 100px;
+      background-color: themed('border');
     }
 
     .menu{
@@ -40,7 +51,9 @@
         span{
           font-size: 13px;
         }
+
         }
+
         .item{
           display: flex;
           align-items: center;
@@ -58,6 +71,8 @@
     }
   }
 }
+}
+
 
 
 
