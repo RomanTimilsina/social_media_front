@@ -19,10 +19,12 @@ function App() {
   const Layout = ()=> {
     return (
       <div>
-        <NavBar />
-        <div style={{display:"flex"}} >
-          <LeftBar /> 
+          <NavBar />
+          <div style={{display:"flex",margin:"20px"}} >
+          <LeftBar />
+          <div style={{flex:"6"}}>
           <Outlet />
+          </div>
           <RightBar />
         </div>
       </div>

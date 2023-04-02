@@ -1,0 +1,63 @@
+.leftBar{
+  flex: 1;
+  margin-left: 20px;
+  position: sticky;
+  top: 100px;
+  height: calc(100vh - 100px);
+  
+  .container{
+
+    hr{
+      margin: 20px 0px;
+      border: none;
+      height: 0.5px;
+      background-color: rgb(199, 177, 224);
+      width: 100px;
+    }
+
+    .menu{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      span{
+        font-size: 12px;
+      }
+
+      .user{
+        
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img{
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        span{
+          font-size: 13px;
+        }
+        }
+        .item{
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img{
+            width: 20px;
+            height: 20px;
+          }
+
+          span{
+            font-size: 13px;
+          }
+      }
+    }
+  }
+}
+
+
+
