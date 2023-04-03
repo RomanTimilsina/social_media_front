@@ -21,7 +21,7 @@ function App() {
     return (
       <div className="theme-dark">
           <NavBar />
-          <div style={{display:"flex",margin:"20px"}} >
+          <div style={{display:"flex"}} >
           <LeftBar />
           <div style={{flex:"6"}}>
           <Outlet />

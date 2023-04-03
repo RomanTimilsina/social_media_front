@@ -58,9 +58,9 @@ const RightBar = () => {
             <span>3 min ago</span>
           </div>
         </div>
-        <div className="item">
+        <div className="item" >
           <span>Online friends</span>
-          <div className="user">
+          <div className="user user_online">
             <div className="userInfo">
               <img src="https://images.pexels.com/photos/341013/pexels-photo-341013.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
               <span>Jane Doe</span>
@@ -91,7 +91,15 @@ const RightBar = () => {
               <div className="online"></div>
             </div>
           </div><div className="user">
-            <div className="userInfo">
+          <div className="userInfo">
+              <img src="https://images.pexels.com/photos/341013/pexels-photo-341013.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+              <span>Jane Doe</span>
+              <div className="online"></div>
+            </div><div className="userInfo">
+              <img src="https://images.pexels.com/photos/341013/pexels-photo-341013.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+              <span>Jane Doe</span>
+              <div className="online"></div>
+            </div><div className="userInfo">
               <img src="https://images.pexels.com/photos/341013/pexels-photo-341013.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
               <span>Jane Doe</span>
               <div className="online"></div>
