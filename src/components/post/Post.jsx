@@ -37,8 +37,8 @@ const Post = ({post}) => {
             {liked ? <FavoriteOutlinedIcon/>:<FavoriteBorderOutlinedIcon/>}
             12 likes
           </div>
-          <div className="item">
-             <TextsmsOutlinedIcon onClick={() =>setCommentOpen(!commentOpen)} />
+          <div className="item" onClick={() =>setCommentOpen(!commentOpen)}>
+             <TextsmsOutlinedIcon  />
             12 comments
           </div>
           <div className="item">
