@@ -12,6 +12,10 @@
   font-size: 13px;
   background-color: themed('bgSoft');
 
+  @include mobile{
+    display: none;
+  }
+
   &::-webkit-scrollbar{
     display: none;
   }

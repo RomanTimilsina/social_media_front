@@ -1,14 +1,29 @@
+@import '../../style.scss';
+
 .stories{
+  @include themify($themes){
   display: flex;
   gap: 10px;
   height: 250px;
   margin-bottom: 20px;
+
+  @include mobile{
+   height: 50px;
+   justify-content: space-between;
+  }
 
   .story{
     flex: 1;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+
+    @include mobile{
+        flex:none;
+        width: 50px;
+        height: 50px;
+       border-radius: 50%;
+     }
 
     img{
       display: flex;
@@ -25,16 +40,21 @@
       bottom: 10px;
       left: 10px;
       font-size: 14px;
+
+      @include mobile{
+        display: none;
+       }
     }
 
     p{
       position: absolute;
-      font-size: 200px;
+      font-size: 40px;
       -webkit-text-stroke-width: 1px;
             -webkit-text-stroke-color: rgb(254, 254, 254);
       top: 10px;
-      color: rgba(0, 0, 0, 0.6);
+      color: rgba(60, 27, 179, 0.6);
       border-radius: 50%;
+
       width: 100%;
       height: 100%;
       display: flex;
@@ -42,6 +62,20 @@
       align-items: center;
       cursor: pointer;
       font-weight: bold;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+
+      @include mobile{
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      }
     }
   }
+}
 }
