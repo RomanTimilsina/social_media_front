@@ -41,7 +41,7 @@ $themes: (
 }
 
 @mixin mobile {
-  @media (max-width: 2000px) {
+  @media (max-width: 480px) {
     @content;
   }
 }

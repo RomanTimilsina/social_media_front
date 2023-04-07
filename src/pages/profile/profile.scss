@@ -38,6 +38,14 @@
   .profileContainer{
     margin-top: 90px;
 
+    @include mobile{
+    
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
     
 
     .userInfo{
@@ -53,8 +61,6 @@
 
       @include mobile{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         padding: 20px;
       }
 
